@@ -1,0 +1,19 @@
+.notFound {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Scheherazade New", serif;
+  
+}
+.notFoundImg {
+  width: 15rem;
+}
+.notFoundH1{
+    font-size: 3rem;
+    margin-bottom: -1rem;
+}
+.notFoundP {
+  margin: -2rem 0rem;
+  font-size: 2rem;
+}

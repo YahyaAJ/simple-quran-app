@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import { NotFound } from "./component/404";
+import { Footer } from "./component/footer";
+import { Quran } from "./component/quran";
+import Main from "./component/surah";
 
 function App() {
+  const [numberSurah, setNumberSurah] = useState(1);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Quran
+                setNumberSurah={(res) => {
+                  setNumberSurah(res);
+                }}
+              />
+            }
+          />
+          <Route path="surah" element={<Main numberSurah={numberSurah} />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer/>
+      </div>
+    </>
   );
 }
 

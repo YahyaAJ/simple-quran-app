@@ -1,0 +1,13 @@
+.footer {
+    background: #e6f3ff;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    font-family: "Ramaraja", serif;
+  }
+  .footerContent {
+    text-align: center;
+    margin: 1rem;
+  }
