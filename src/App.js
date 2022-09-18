@@ -7,7 +7,7 @@ import { Quran } from "./component/quran";
 import Main from "./component/surah";
 
 function App() {
-  const [numberSurah, setNumberSurah] = useState(1);
+  const [numberSurah, setNumberSurah] = useState(2);
 
   return (
     <>

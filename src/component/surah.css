@@ -17,13 +17,13 @@
   width: 50%;
   text-align: center;
 }
-.selectComponent{
+.selectComponent {
   width: 50%;
   text-align: center;
 }
 .optionBox {
-width: 10rem;
-height: 2rem;
+  width: 10rem;
+  height: 2rem;
 }
 .surahTitle {
   text-align: center;
@@ -62,10 +62,38 @@ height: 2rem;
 .ayat:nth-child(2n + 2) {
   background: #f0f8ff;
 }
-.ayatTranslation {
-}
+
 .ayatAr {
   text-align: right;
   font-size: 2rem;
   font-family: "Scheherazade New", serif;
+}
+@media screen and (max-width: 600px) {
+  .component {
+    position: relative;
+    margin-top: 1.5rem;
+  }
+  .backButton {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .surahTitle {
+    padding: 0;
+  }
+  .bismillah{
+    font-size: 2rem;
+  }
+  .ayat{
+    padding: 0 1rem;
+    
+  }
+  .ayatAr{
+    font-size: 1.5rem;
+  }
+  .ayatTranslation {
+    font-size: .8rem;
+  }
+  .nomor{
+    margin-right: .5rem;
+  }
 }
